@@ -127,10 +127,8 @@ def random_draw(event):
         Energy = float(np.random.rand() * 10 + 1) * MeV  # Randomly generate different incident energies
         v0 = np.sqrt(2 * Energy / m_alpha_kg) * 1e15
         b = float(np.random.rand() * 2000 - 1000)  # Different aiming distances are randomly generated
-        x_r[:, i], y_r[:, i] = solving(v0, b,
-                                       k2)  # Use the solution function defined earlier to solve the coordinates corresponding to the initial conditions of group i, and import the data into the i-th column of the matrix for backup
-        # v_x[:,i],v_y[:,i]=solving_speed(v0,b)#Use the solution function defined earlier to solve the velocity corresponding to the initial conditions of group i, and import the data into the ith column of the matrix for later use
-        # tan_theta[:,i]=(v_y[:,i]/v_x[:,i])
+        x_r[:, i], y_r[:, i] = solving(v0, b, k2)  # Use the solution function defined earlier to solve the coordinates corresponding to the initial conditions of group i, and import the data into the i-th column of the matrix for backup
+        
     # Random Plot
     figure, axes = plt.subplots(nrows=1, ncols=2, figsize=(18, 9))
     for j in range(len(x_m)):
