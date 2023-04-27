@@ -1,5 +1,6 @@
 # Alpha-Particle-Scattering-Simulation
 What this project is about:
+
 This program is a simulation program for alpha particle scattering. The program can generate particle scattering videos based on manually input parameters or random parameters, which contain information about the relative position and trajectory of the particles. We are committed to using this program to provide high school or university physics students with more intuitive and vivid particle scattering phenomena, and to use this program as a teaching tool to help school teachers explain the Rutherford scattering experiment.
 
 What sets it apart from similar products:
